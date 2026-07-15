@@ -1,6 +1,4 @@
-main {
-  margin-top: 60px;
-}
+
 
 main h1 {
   margin: 0 10px;
@@ -27,3 +25,38 @@ main p {
   font-family: "Roboto", sans-serif;
   margin-top: 0;
 }
+
+.group {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
+  margin-bottom: 20px;
+}
+
+
+img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+@media all and (min-width: 1000px) {
+  .group {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  main {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .item {
+      flex: 1;
+      margin: 10px;
+    }
+  
+  .item-double {
+      flex: 2;
+      margin: 10px;
+    }
+  }
